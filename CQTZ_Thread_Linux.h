@@ -1,7 +1,6 @@
 ﻿#ifndef CQTZ_THREAD_LINUX_INCLUDE_
 #define CQTZ_THREAD_LINUX_INCLUDE_
-#include "config/config.h"
-#if !BUILD_WITH_WINDOWS
+#if !(defined(_WIN32) || defined(WIN32) || defined(_WIN64) || defined(WIN64) || defined(_WINDOWS) || defined(_WINDOWS_))
 #include <assert.h>
 #include <functional>
 #include <pthread.h>
